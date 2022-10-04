@@ -7,4 +7,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'myStore';
+
+//   mobileMedia:any = window.matchMedia("(max-width:250px)")
+//   constructor () {
+//     if (this.mobileMedia) {
+//       alert("Media matches")
+//     }
+//   }
+
 }
+

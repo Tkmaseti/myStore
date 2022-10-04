@@ -1,0 +1,38 @@
+<div class="container">
+  <div class="border">
+    <button class="btn btn-md btn-outline-primary">
+      <i class="fa fa-user"></i>New Friend</button>
+  </div>
+  <table class="table table-bordered table-striped">
+    <thead>
+    <tr>
+      <th>ID</th>
+      <th>Mail</th>
+      <th>Password</th>
+      <th>Name</th>
+      <th>Role</th>
+      <th>action</th>
+      <!-- <th>Country</th> -->
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let friend of friends">
+      <td><span>{{friend.id}}</span></td>
+      <td><span>{{friend.email}}</span></td>
+      <td><span>{{friend.password}}</span></td>
+      <td><span>{{friend.name}}</span></td>
+      <td><span>{{friend.role}}</span></td>
+      <td>
+        <button class="btn btn-sm btn-info">
+          <i class="fa fa-search"></i>Details</button>
+        <button class="btn btn-sm btn-warning">
+          <i class="fa fa-edit"></i>Edit</button>
+        <button class="btn btn-sm btn-danger">
+          <i class="fa fa-remove"></i>Delete</button>
+      </td>
+      <!-- <td><span>{{friend.country}}</span></td> -->
+    </tr>
+
+    </tbody>
+  </table>
+</div>

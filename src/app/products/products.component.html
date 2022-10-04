@@ -1,0 +1,57 @@
+<div class="mainMain">
+  <div class="sorting menu">
+    <select name="sortby" id="sortby">
+      <option value="sort">Sort By:</option>
+      <option value="pascending">Price Ascending </option>
+      <option value="pdescending">Price Descending</option>
+      <option value="mpurchased">Most Purchased</option>
+      <option value="lpurchased">Least Purchased</option>
+    </select>
+
+    <select name="brand" id="brand">
+      <option value="">Brands:</option>
+      <option value="" (click)="jewSel()">Jewelery</option>
+      <option value="">Brand 3</option>
+      <option value="">Brand 4</option>
+    </select>
+
+    <select name="category" id="category">
+      <option value="">Category:</option>
+      <option value="">Category 1 </option>
+      <option value="">Category 2</option>
+      <option value="">Category 3</option>
+      <option value="">Category 4</option>
+    </select>
+    <input class="search" type="text" placeholder="Search..">
+  </div>
+  <!-- <div class="row row-cols-3 row-cols-md-3 g-4" id="cardsBg" *ngFor="let product of products">
+    <div class="col-2">
+      <div class="card" style="width: 25rem; height: 30rem;">
+          <div class="card-body">
+            <h5 class="card-title">{{product.title}}</h5>
+            <img src="{{product.image}}" class="card-img" alt="...">
+            <p class="card-text">{{product.description}}</p>
+            <label class="price">{{product.price}}</label>
+            <a href="#" class="btn btn-primary">Add to Cart</a>
+          </div>
+      </div>
+    </div>
+
+  </div> -->
+  <div class="row">
+    <div class="card" style="width: 18rem;" *ngFor="let product of products">
+      <img src="{{product.image}}" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">{{product.title}}</h5>
+        <p class="card-text" id="itemInfo">{{product.description}}</p>
+        <div class="bottom">
+          <label class="price">Price R:{{product.price}}</label>
+          <a href="#" class="btn btn-primary" id="btnAddToCart">Add To Cart</a>
+          <input type="number" placeholder="Qty" id="quantity" >
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+

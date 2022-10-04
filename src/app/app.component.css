@@ -1,0 +1,13 @@
+#appName{
+  font-weight: bold;
+  font-size:xx-large;
+}
+#navBar{
+  background-image: linear-gradient(rgb(35, 255, 182), aqua,rgb(35, 255, 182));
+}
+.nav-item {
+  color: black;
+  font-weight: bold;
+}
+
+

@@ -1,1 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+    margin: Opx;
+    padding: 0px;
+    box-sizing: border-box;
+    height: 100vh;
+    /* background-image: linear-gradient(aqua, rgb(42, 192, 142)) */
+}
